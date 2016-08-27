@@ -1,5 +1,5 @@
-$color1: #B7B8B6;
-$color2: #003B46;
+$color2: #1e434c;
+$color1: #f1f1f2;
 
 * {
   box-sizing: border-box;
@@ -11,26 +11,18 @@ body {
 }
 
 #main {
+  padding-bottom: 10px;
   border-bottom: 1px solid $color1;
   box-shadow: 0px 2px 1px 1px #0E1D25;
-  padding-bottom: 20px;
 }
 
-input {
-  width: 50px;
-  border: 0 none;
-  background: transparent;
-  box-shadow: none;
-}
 
 .glyphicon {
-  background: $color1;
-  border: 1px solid currentColor;
   color: $color2;
-  border-radius: 50%;
-  padding: 10px;
-  font-size: 2.2em;
-  top: 5px;
-  z-index: 2;
-  margin: 0 10px;
+  font-size: 1.45em;
+}
+
+
+.glyphicon-random {
+  left: -1px;
 }
