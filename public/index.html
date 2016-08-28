@@ -18,19 +18,22 @@
   <body>
     <div class="container-fluid">
       <div id="main" class="row text-center">
-        <h2>Search for a Wikipedia article, or view a random one!</h2>
-        <div class="row">
-          <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-            <div class="input-group">
-              <input type="text" class="form-control"/>
-              <div class="input-group-btn">
-                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-random"></span></button>
+        <div class="col-xs-12">
+          <h1>Search for an article or land on a random one!</h1>
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+              <div class="input-group">
+                <input type="text" id="searchInput" class="form-control"/>
+                <div class="input-group-btn">
+                  <button type="button" id="searchButton" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                  <button type="button" id="random" class="btn btn-default"><span class="glyphicon glyphicon-random"></span></button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div id="searchResults" class="row"></div>
     </div>
   </body>
 </html>

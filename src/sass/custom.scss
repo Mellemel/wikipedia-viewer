@@ -1,27 +1,26 @@
-$color2: #1e434c;
 $color1: #f1f1f2;
+$color2: #1995ad;
+$color3: #063852;
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: $color2;
-  color: $color1;
+  background-color: $color1;
+  color: $color3;
 }
 
 #main {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   border-bottom: 1px solid $color1;
-  box-shadow: 0px 2px 1px 1px #0E1D25;
+  box-shadow: 0px 1px 10px #0E1D25;
 }
-
 
 .glyphicon {
-  color: $color2;
+  color: $color3;
   font-size: 1.45em;
 }
-
 
 .glyphicon-random {
   left: -1px;
