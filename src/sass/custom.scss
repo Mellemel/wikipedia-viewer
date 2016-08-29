@@ -1,6 +1,7 @@
-$color1: #f1f1f2;
-$color2: #1995ad;
-$color3: #063852;
+$color1: #edf4fd;
+$color2: #4d648d;
+$color3: #283655;
+$color4: #1e1f26;
 
 * {
   box-sizing: border-box;
@@ -12,13 +13,50 @@ body {
 }
 
 #main {
-  padding-bottom: 15px;
-  border-bottom: 1px solid $color1;
+  position: relative;
+  z-index: 1;
+  color: $color1;
+  background-color: $color3;
+  border-bottom: 1px solid $color3;
   box-shadow: 0px 1px 10px #0E1D25;
 }
 
+#searchResults {
+  position: relative;
+  z-index: 0;
+  padding-bottom: 20px;
+}
+
+a {
+  color: $color1;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  color: $color1;
+  text-decoration: none;
+}
+
+input[type='text'] {
+  font-size: 1.5em;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.result {
+  background-color: $color3;
+  margin-top: 20px;
+  box-shadow: 0px 5px 10px -2px #0E1D25;
+}
+
+.result:hover {
+  background-color: $color2;
+}
+
 .glyphicon {
-  color: $color3;
+  color: $color2;
   font-size: 1.45em;
 }
 
