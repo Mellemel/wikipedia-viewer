@@ -1,16 +1,17 @@
-var React = require('react')
-var ReactDOM = require('react-dom')
+import React from 'react'
+import ReactDOM from 'react-dom'
+import SearchResultBox from './components/searchresultbox'
 
 $(document).ready(() => {
   var input = $('#searchInput'), searchButton = $('#searchButton')
 
-  $('#searchButton').click(() => {
+  searchButton.click(() => {
     var searchText = input.val()
 
     getSearchResults(searchText, (data) => {
       var cleanData = sanitizeData(data, limit)
       ReactDOM.render(
-        <SearchResultsBox results={cleanData} />,
+        <SearchResultBox results={cleanData} />,
         document.getElementById('searchResults')
       )
     })
@@ -22,34 +23,7 @@ $(document).ready(() => {
   })
 
   $('#random').click(() => {
-
-  })
-
-  var SearchResult = React.createClass({
-    render: function () {
-      return (
-        <div className="row">
-          <div className="col-xs-12 col-md-10 col-md-offset-1 result">
-            <a href={this.props.result.link}>
-              <h2>{this.props.result.title}</h2>
-              <p>{this.props.result.summary}</p>
-            </a>
-          </div>
-        </div>
-      )
-    }
-  })
-
-  var SearchResultsBox = React.createClass({
-    render: function() {
-      return (
-        <div className="col-xs-12 col-md-8 col-md-offset-2">
-          {this.props.results.map((result) => {
-            return <SearchResult result={result} />
-          }) }
-        </div>
-      )
-    }
+    ReactDOM.unmountComponentAtNode()
   })
 
   var limit = 5
@@ -71,10 +45,10 @@ $(document).ready(() => {
     })
   }
 
-  function sanitizeData (data, limit) {
+  function sanitizeData(data, limit) {
     var titles = data[1], summaries = data[2], links = data[3]
     var temp = []
-    for (let x = 0; x < limit; x++){
+    for (let x = 0; x < limit; x++) {
       temp.push({
         title: titles[x],
         summary: summaries[x],
