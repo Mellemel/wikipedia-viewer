@@ -22,11 +22,7 @@ $(document).ready(() => {
     }
   })
 
-  $('#random').click(() => {
-    ReactDOM.unmountComponentAtNode()
-  })
-
-  var limit = 5
+  var limit = 10
 
   function getSearchResults(searchTerm, cb) {
     $.ajax({

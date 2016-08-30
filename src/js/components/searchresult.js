@@ -5,9 +5,9 @@ class SearchResult extends React.Component {
     return (
       <div className="row">
         <div className="col-xs-12 col-sm-10 col-sm-offset-1 result">
-          <a href={this.props.result.link}>
-            <h2>{this.props.result.title}</h2>
-            <p>{this.props.result.summary}</p>
+          <a href={this.props.link}>
+            <h2>{this.props.title}</h2>
+            <p>{this.props.children}</p>
           </a>
         </div>
       </div>
@@ -15,4 +15,4 @@ class SearchResult extends React.Component {
   }
 }
 
-module.exports = SearchResult
+export default SearchResult

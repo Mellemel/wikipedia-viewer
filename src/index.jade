@@ -20,12 +20,12 @@ html(lang='en')
     .container-fluid
       .row.text-center#main
         .col-xs-12
-          h1 Search for an article or land on a random one!
+          h1 Search for an article or visit a random one!
           .input-group.col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3.col-md-4.col-md-offset-4
             input.form-control(type="text")#searchInput
             .input-group-btn
               button.btn.btn-default(type="button")#searchButton
                 span.glyphicon.glyphicon-search
-              button.btn.btn-default(type="button")#random
+              button.btn.btn-default(type="button", onclick="window.location='https://en.wikipedia.org/wiki/Special:Random'")#random
                 span.glyphicon.glyphicon-random
       .row#searchResults
