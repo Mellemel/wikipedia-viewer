@@ -3,10 +3,14 @@
 
 body {
   background-color: #edf4fd;
-  color: #283655; }
+  color: #283655;
+  padding-top: 12vh; }
+
+.affix {
+  top: 0;
+  width: 100%; }
 
 #main {
-  position: relative;
   z-index: 1;
   color: #edf4fd;
   background-color: #283655;

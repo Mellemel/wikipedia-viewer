@@ -10,10 +10,15 @@ $color4: #1e1f26;
 body {
   background-color: $color1;
   color: $color3;
+  padding-top: 12vh;
+}
+
+.affix {
+  top: 0;
+  width: 100%;
 }
 
 #main {
-  position: relative;
   z-index: 1;
   color: $color1;
   background-color: $color3;
